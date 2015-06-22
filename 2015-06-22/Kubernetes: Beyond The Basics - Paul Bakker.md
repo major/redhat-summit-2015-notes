@@ -85,3 +85,7 @@ _Paul Bakker_
 * Use the ELK stack (elasticsearch, logstash, kibana)
 * Key is to get all of the logs into the same log store -- containers + nodes
 * Makes it easier to trace requests through the infrastructure
+
+### Step 9: Configuration
+* How do you pass configuration data to containers?
+* Environment variables can be an option
