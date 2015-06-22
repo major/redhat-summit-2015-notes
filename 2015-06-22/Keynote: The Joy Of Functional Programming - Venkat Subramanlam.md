@@ -1,5 +1,5 @@
-## KEYNOTE: THE JOY OF FUNCTIONAL PROGRAMMING
-_Venkat Subramaniam Monday, June 22, 10:00AM - 11:15AM (Ballroom A, 3rd Floor)_
+## Keynote: The Joy of Functional Programming
+_Venkat Subramaniam_
 
 ### Intro
 * We think a lot about programming
