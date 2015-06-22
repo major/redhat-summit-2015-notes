@@ -74,4 +74,14 @@ _Paul Bakker_
     * Make health checks available at `GET /health` and check the response
     * Build server can't reach the pods -- how do we do health checks?
     * Need a deployer server that does health checks, sets up replication controllers, and adjusts etcd
-* *Gets a little crazy around here -- notes are incomplete -- check the session video*
+
+```
+>>  Gets a little crazy around here  <<
+>>  Notes are incomplete             <<
+>>  Check the session video          <<
+```
+
+### Step 8: Logging
+* Use the ELK stack (elasticsearch, logstash, kibana)
+* Key is to get all of the logs into the same log store -- containers + nodes
+* Makes it easier to trace requests through the infrastructure
