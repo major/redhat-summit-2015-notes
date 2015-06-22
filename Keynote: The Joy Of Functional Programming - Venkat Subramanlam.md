@@ -114,3 +114,5 @@ _Venkat Subramaniam Monday, June 22, 10:00AM - 11:15AM (Ballroom A, 3rd Floor)_
     * Easier to test
     * Easy to optimize
     * Easier to make concurrent
+* That's where the joy comes from ^^
+* **Biggest change in the programming world is in the minds of programmers**
