@@ -108,3 +108,31 @@ _Jeremy Eder, D. John Shakshober, Larry Woodman, and Bill Gray_
 * cgroup oomkills
     * If you restrict a cgroup to a certain memory size and you overcommit, the system will swap/page
     * Kernel will kill off processes just as if it was running on a system with less memory
+
+### Atomic host
+* Tuned profile inheritance from host -> guest -> container
+* Containers have faster round trip TCP/UDP perf than KVM
+
+### Network performance (NFV) realtime
+* Realtime kernel available for RHEL 7 w/tuned
+* Power controls in BIOS increase latency, let it be adjustable in the OS level
+* NIC offloads favor throughput
+* NFV tuned raised throughput from ~ 300Gbps to 421Gbps (12x40Gb NICs)
+* 218M pps on one system (12x40Gb NICs)
+* Jitter under 20ms on realtime tuned profile (will be improved further)
+* 5 microseconds round trip latency with OpenOnload and containers
+* RHEL 7 `nohz_full`
+    * Stop interrupting userspace tasks
+    * Move timekeeping to non-latency-sensitive cores
+    * Potentially no ticks in a guest nor in the host
+* RHEL 7 `BUSY_POLL`
+    * Must be driver enabled (Intel, Mellanox, SolarFlare, etc)
+    * Remove interripts off network interface path
+    * Much faster round trip times
+* `turbostat` -- idle states and freq on Intel CPUs
+
+### Disk I/O
+* tuned profiles apply to disk I/O
+* pdflush -- per filesystem flush daemon
+* Go over dirty_background_ratio? async flush
+* Go over dirty_ratio? sync flush
