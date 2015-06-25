@@ -1,7 +1,7 @@
 ## Super Privileged Containers
 _Dan Walsh_
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/dM2Fc53Dtd4" frameborder="0" allowfullscreen></iframe>
+[Session video](https://www.youtube.com/embed/dM2Fc53Dtd4)
 
 *The session video contains plenty of great SELinux jokes other humor.*
 
